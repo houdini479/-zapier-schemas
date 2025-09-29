@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "qualification_score": {
+      "type": "string",
+      "description": "Score from 1-5"
+    },
+    "fit_summary": {
+      "type": "string",
+      "description": "Two sentence summary of the candidate's fit for the role"
+    },
+    "degree": {
+      "type": "string",
+      "description": "Degree Name, Institution Name, Years (e.g., 2018-2022). Additional Degree Name, Institution Name, Years (if applicable)"
+    },
+    "employment_history": {
+      "type": "string",
+      "description": "YYYY-MM to YYYY-MM, Company Name, City, State/Province - Job Title - One sentence job description"
+    }
+  },
+  "required": ["qualification_score", "fit_summary", "degree", "employment_history"],
+  "additionalProperties": false
+}
